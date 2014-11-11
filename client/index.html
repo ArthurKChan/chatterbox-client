@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE HTML>
 <html>
   <head>
     <meta charset="utf-8">
@@ -14,8 +14,16 @@
   </head>
   <body>
     <div id="main">
-      <h1>chatterbox</h1>
-      <div id="chatLog"></div>
+      <div class='mainBar'>
+        <h1>chatterbox</h1>
+        <form class='inputField'>
+          username:&nbsp&nbsp<input id='inputUsername' type='text' ></input>
+          roomname:&nbsp<input id='inputRoom' type='text'></input>
+          message:&nbsp&nbsp&nbsp<textarea id='inputMessage' form='inputField' rows='4' cols='50'></textarea>
+          <input type='submit' id='send' class='submit'></input>
+        </form>
+      </div>
+      <div id="chats"></div>
       <!-- Your HTML goes here! -->
     </div>
   </body>
