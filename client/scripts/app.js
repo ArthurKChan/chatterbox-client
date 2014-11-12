@@ -5,9 +5,15 @@ var Message = Backbone.Model.extend({
 
 var MessageView = Backbone.View.extend({
   model: Message,
+  
+  template: _.template('<div class="msgContainer" data-id="{{objectId}}">\
+    <div class="user">{{username}}</div><div class="text">{{text}}</div></div>'),
+
   render : function(){
-    
+    this.$el.html(this.template(this.model.attributes));
+    return this.$el;
   }
+
 });
 
 var Messages = Backbone.Collection.extend({
@@ -24,7 +30,7 @@ var Messages = Backbone.Collection.extend({
 });
 
 var MessagesView = Backbone.View.extend({
-
+  model: Message
 });
 
 
