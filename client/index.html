@@ -15,14 +15,24 @@
   <body>
     <div id="main">
       <div class='mainBar'>
+        <h2>Select Room</h2>
+        <div id='roomSelect'>
+            <button class='roomOption'>general</button> 
+        </div>
+
         <h1>chatterbox</h1>
-        <form class='inputField'>
-          username:&nbsp&nbsp<input id='inputUsername' type='text' ></input>
-          roomname:&nbsp<input id='inputRoom' type='text'></input>
-          message:&nbsp&nbsp&nbsp<textarea id='inputMessage' form='inputField' rows='4' cols='50'></textarea>
-          <input type='submit' id='send' class='submit'></input>
-        </form>
+  <!--       <form class='inputField'>
+          username:&nbsp&nbsp<input id='username' type='text' ></input>
+          roomname:&nbsp<input id='room' type='text'></input>
+          message:&nbsp&nbsp&nbsp<textarea id='message' form='inputField' rows='4' cols='50'></textarea>
+          <input type='submit' id='send'>  </input>
+        </form> -->
+        message:<br><textarea id='message' rows='4' cols='50'></textarea>
+        username:<textarea id='username' rows='1' cols='20'></textarea>
+        <br>room:<textarea id='room' rows='1' cols='20'></textarea>
+        <button id='send'>send</button>
       </div>
+      <br>
       <div id="chats"></div>
       <!-- Your HTML goes here! -->
     </div>
