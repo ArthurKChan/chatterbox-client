@@ -8,6 +8,8 @@
     <!-- dependencies -->
     <script src="bower_components/jquery/jquery.min.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/handlebars/handlebars.min.js"></script>
     <!-- your scripts -->
     <script src="env/config.js"></script>
     <script src="scripts/app.js"></script>
@@ -21,12 +23,6 @@
         </div>
 
         <h1>chatterbox</h1>
-  <!--       <form class='inputField'>
-          username:&nbsp&nbsp<input id='username' type='text' ></input>
-          roomname:&nbsp<input id='room' type='text'></input>
-          message:&nbsp&nbsp&nbsp<textarea id='message' form='inputField' rows='4' cols='50'></textarea>
-          <input type='submit' id='send'>  </input>
-        </form> -->
         message:<br><textarea id='message' rows='4' cols='50'></textarea>
         username:<textarea id='username' rows='1' cols='20'></textarea>
         <br>room:<textarea id='room' rows='1' cols='20'></textarea>
